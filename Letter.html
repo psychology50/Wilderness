@@ -5,13 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/Letter.css" type="text/css">
+
+    <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/Piano-1320568874543813841.png">
+    <meta property="og:image" content="https://media.istockphoto.com/photos/grand-piano-picture-id540856596?k=20&m=540856596&s=612x612&w=0&h=13JroUZzU-23Dd4afIbs_4-34KzuC7RW766VBDdzWdc=">
+    <meta property="og:title" content="2021 MS's Online Piano Recital">
+    <meta property="og:description" content="For The Medical Workers">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    
     <title>Happy Birthday to Wonjun</title>
+    
     <style>
         @font-face {
             src: url("./font/Cafe24Shiningstar.ttf");
             font-family: "myFont";
         }
+        * {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+            .rtan {
+                margin: 50px auto 0px auto;
+            }
+            .hone {
+                font-size: 22px;
+            }
+            .htwo {
+                font-size: 22px;
+            }
+            .messagebox {
+                margin-bottom: 50px;
+            }
+            .envelope {
+                margin: 50px auto 0px auto;
+            }   
+        }        
     </style>
+    <script src="./js/Letter.js"></script>
+
 </head>
 <body>
     <div>
@@ -27,8 +65,20 @@
             </ul>
         </nav>
     </div>
-    <div>
-
-    </div>
+        <div class="letter-close">
+            <div class="envelope" onclick="open_letter()"></div>
+            <h2 class="envelope-title">2021 MS's Online Piano Recital Invitation Cared</h2>
+            <h5 class="envelope-msg">LET'S OPEN IT!</h5>
+        </div>
+        <div class="letter-open">
+            <div class="rtan" onclick="go_rtan()"></div>
+            <h1 class="hone">We invite medical workers</h1>
+            <h1 class="htwo">to '2021 MS's Online Piano Recital'</h1>
+            <div class="messagebox">
+                hello
+                <p class="from">From. JS</p>
+            </div>
+        </div>
+    
 </body>
 </html>

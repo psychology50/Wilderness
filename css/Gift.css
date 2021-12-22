@@ -1,0 +1,49 @@
+.cont {
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #a52a2a;
+}
+.frame {
+    position:relative;
+    top: 20px;
+    width: 150px;
+    height: 280px;
+    margin: 0 auto;
+    background-image: url('../img/clock.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: auto 100%;
+    perspective: 480px;
+}
+.door{
+    position: relative;
+    width: 150px;
+    height: 280px;
+    background-color: #964b00;
+    transform: rotateY(45deg);
+    transform-origin: left;
+    animation: opendoor 2s ease-in-out infinite alternate;
+}
+.handle {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    width:18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fac87d;
+}
+@keyframes opendoor {
+    from{transform: rotateY(70deg);}
+    to{transform: rotateY(-60deg);}
+}
+.memo{
+    position: absolute;
+    width: 300px;
+    top:350px;
+    left: -12px;
+}

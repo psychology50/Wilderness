@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(240, 215, 168);
 }
@@ -8,30 +13,33 @@ aside{
 }
 
 /* navigation */
+nav{
+    text-align: center;
+}
 #nav{
-    background-color: #FFDAB9;
+    display: inline-block;
     list-style-type: none;
     margin: 0;
-    padding-left: 40%;
+    padding: 0;
     overflow: hidden;
 }
 li {
     float: left;
+    margin: 0px 40px;
 }
-li a {
+li>a {
     display: block;
-    background-color: #FFDAB9;
     color: #000000;
     padding: 8px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
 }
-li a.current {
+li>a.current {
     background-color: #FF6347;
     color: white;
 }
-li a:hover:not(.current) {
+li>a:hover:not(.current) {
     background-color: #CD853F;
     color: white;
 }
