@@ -13,6 +13,7 @@ aside{
 }
 
 /* navigation */
+
 nav{
     text-align: center;
 }
@@ -22,10 +23,11 @@ nav{
     margin: 0;
     padding: 0;
     overflow: hidden;
+   
 }
 li {
     float: left;
-    margin: 0px 40px;
+    margin: 0px 40px;    
 }
 li>a {
     display: block;
@@ -35,6 +37,12 @@ li>a {
     text-align: center;
     font-weight: bold;
 }
+@media(max-width: 800px) {
+    li {
+        margin: 0px 20px;
+    }
+}
+
 li>a.current {
     background-color: #FF6347;
     color: white;
